@@ -3,9 +3,60 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>index</title>
+        <title>Web Shop</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
     </head>
     <body>
-        
+        <div id="background">
+            <!-- 헤드 라인 -->
+            <div class="header">
+                <a href="./html/signup.html">
+                    <img src="./Images/signin.png" alt="로그인">
+                </a>
+                <a href="">
+                    <img src="./Images/cart.png" alt="장바구니">
+                </a>
+                <a href="">
+                    <img src="./Images/late.png" alt="최근본제품">
+                </a>
+            </div>
+            <!-- 검색 라인 -->
+            <div class="top_area">
+                <img src="./Images/logo.png" alt="로고" width="120px">
+                <div class="top_searchbox">
+                    <input id="top_searchbar" type="text" placeholder="검색어 입력">
+                    <button id="top_search_btn" type="submit">
+                        <img src="./Images/search_button.png" alt="검색버튼" width="30px">
+                    </button>
+                </div>
+            </div>
+            <div id="container">
+                <!-- 메인 카테고리 -->
+                <div class="product_category">
+                    <div>패 션 의 류</div>
+                    <div>브 랜 드 패 션</div>
+                    <div>디 지 털</div>
+                    <div>스 포 츠</div>
+                    <div>자 동 차</div>
+                </div>
+                <!-- 하단 영역 -->
+                <div style="height: 550px; display: flex;">
+                    <!-- 상세 카테고리 -->
+                    <div style="width: 20%; height: 100%; background-color: #8CC8FF;">
+                        <!-- 상세카테고리 innerHTML로 삽입 -->
+                    </div>
+                    <!-- 제품 리스트 ( 사진 첨부 및 설명 ) == 한 열에 3개씩 3개 이상 넘어갈 경우 위 아래 스크롤로 세팅 -->
+                    <div style="width: 80%; height: auto; background-color: beige;">
+                        <!-- 제품 리스트 innerHTML로 삽입 (기본값)-->
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="footer">Copylight &copy; 2023 web shop</div>
+            </div>
+        </div>
     </body>
 </html>
