@@ -1,0 +1,67 @@
+#logo{
+    float: left;
+}
+
+.search{
+    position: relative;
+    width: 70%;
+    top: 42px;
+    float: left;
+}
+
+#search1{
+    width: 100%;
+    border: 3px solid #8CC8FF;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+#reading_glasses{
+    position: absolute;
+    width: 25px;
+    top: 8px;
+    right: -10px;
+    margin: 0;
+}
+
+#profile{
+    position: relative;
+    top: 36px;
+    left: 50px;
+}
+#cart{
+    position: relative;
+    top: 36px;
+    left: 50px;
+}
+#like{
+    position: relative;
+    top: 36px;
+    left: 50px;
+}
+
+.maincategori{
+    position: relative;
+    list-style: none;
+    border-top: 3px solid #8CC8FF;
+    border-bottom: 3px solid #8CC8FF;
+    
+    padding: 10px;
+    top: 50px;
+    width: 100%;
+}
+ul li{
+    display: inline;
+    padding: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+ul li a{
+    position: relative;
+    text-decoration: none; color: black;
+    left: 60px;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
