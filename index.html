@@ -3,9 +3,53 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>index</title>
+        <title>web shop html</title>
+        <link rel="stylesheet" href="./css/index.css">
+
     </head>
     <body>
-        
+        <!-- 헤더 모음 -->
+        <div class="box_header">
+            <!-- 로고 -->
+            <img id ="logo" src="./Images/yottooicon-64x64.png" alt="web shop img" width="300px" height="140.1px" onclick="">
+            <!-- 검색창 -->
+            <div class="search" style="position:relative;">
+                <input type="text" placeholder="검색어를 입력해주세요.">
+                <img src="./Images/-_-0051.png" alt="searchclick">
+            </div>
+
+                <div class="btn_login" style="display:inline-block">
+                    <!-- 헤더 우측 로그인, 카트, 위시리스트 모음. css -->
+                    <!-- onclick 기능 넣어줄 것. -->
+                    <button id="login"><img src="./Images/-_-0052.png" alt="login"></button>
+                    <button id="cart"><img src="./Images/-_-0053.png" alt="cart"></button>
+                    <button id="wishlist"><img src="./Images/-_-0054.png" alt="wishlist"></button>
+                    <!-- 로그인 모음 여기까지. -->
+                </div>
+            </div>
+        </div>
+        <!-- 테이블 모음 -->
+        <div class="m_list">
+            <hr>
+            <!-- 메인 탭 모음 -->
+            <table style="margin-left: auto;margin-right: auto;">
+                <tr class="table_fashion">
+                    <td id="fashion">패션의류</td>
+                    <td id="brand_fashion">브랜드패션</td>
+                    <td id="eletronics">디지털</td>
+                    <td id="sports">스포츠</td>
+                    <td id="car">자동차</td>
+                </tr>
+            </table>
+            <hr>
+        </div>
+        <div class="s_list">
+            <ul class="container_list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </body>
 </html>

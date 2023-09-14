@@ -1,0 +1,61 @@
+/* 상단바 */
+.box_header{
+    display:flex;
+}
+/* 검색창 */
+.search>input{
+    text-align: left;
+    border: 3px solid #8CC8FF;
+    border-radius: 7px;
+    width: 1300px;
+    height: 55.5px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+/* 검색창 돋보기 25줄까지 */
+.search>img{
+    position: absolute;
+    width: 40px;
+    top:50px;
+    right:12px;
+    margin:0;
+}
+.search>img:hover{
+    cursor: pointer;
+}
+/* login, cart, wishlist 등. */
+.btn_login{
+    display:inline-block;
+    margin-top: 40px;
+}
+.btn_login>button:hover{
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.btn_login>button{
+    margin-left:10px;
+    background-color: transparent;
+    border: 0px
+}
+.btn_login>button>img{
+    height:60px;
+    width:60px
+}
+/* 메인 선택창 */
+.m_list>hr{
+    background: #8CC8FF;
+    height:2px;
+    border:0;
+}
+.table_fashion>td{
+    padding-right:100px;
+    padding-left:100px;
+    letter-spacing: 5px;
+    border-left:1px solid;
+    border-right:1px solid;
+}
+.table_fashion>td:hover{
+    cursor: pointer;
+    color:#8CC8FF;
+}
