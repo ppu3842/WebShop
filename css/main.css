@@ -115,13 +115,17 @@
     border-top: solid 1px #fff; border-bottom: solid 1px #fff;
 }
 
-.maincategori .sub li a:hover .goods1{
+.maincategori .sub li a:hover{
     background: #3fa2ff;
-    display: block;
+}
+
+/* .maincategori .sub li:hover .goods1{
+    display: inline-flex;
 }
 
 .goods1{
-    position: relative;
-    display: none;
+    position: absolute;
+    display: block;
     background: #d2e9ff;
-}
+} */
+
