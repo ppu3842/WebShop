@@ -1,7 +1,9 @@
+/* 로고 이미지 */
 #logo{
     float: left;
 }
 
+/* 검색창 */
 .search{
     position: relative;
     width: 70%;
@@ -9,6 +11,7 @@
     float: left;
 }
 
+/* 검색 입력하는 부분 */
 #search1{
     width: 100%;
     border: 3px solid #8CC8FF;
@@ -17,6 +20,7 @@
     font-size: 14px;
 }
 
+/* 돋보기 아이콘 */
 #reading_glasses{
     position: absolute;
     width: 25px;
@@ -25,7 +29,8 @@
     margin: 0;
 }
 
-#profile{
+/* 헤더에 있는 아이콘 부분 */
+#profile{ 
     position: relative;
     top: 36px;
     left: 50px;
@@ -41,27 +46,82 @@
     left: 50px;
 }
 
+/* 메인 카테고리 영역 */
 .maincategori{
+    background: #8CC8FF;
+    height: 50px;
+    top: 100px;
+}
+
+.maincategori ul{
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     list-style: none;
-    border-top: 3px solid #8CC8FF;
-    border-bottom: 3px solid #8CC8FF;
-    
-    padding: 10px;
-    top: 50px;
-    width: 100%;
 }
-ul li{
-    display: inline;
-    padding: 20px;
-    letter-spacing: 5px;
+
+.maincategori .categori>li{
+    float: left;
+    width: 15%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #8CC8FF;
+}
+
+/* 메인 카테고리에 마우스를 올리면 그 밑에 서브 카테고리가 보이게 설정 */
+.maincategori .categori>li:hover .subcategori{
+    display: block;
+}
+
+.maincategori .categori>li a{
+    display: block;
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
-ul li a{
-    position: relative;
-    text-decoration: none; color: black;
-    left: 60px;
+
+/* 메인 카테고리 이름 설정 */
+#mcname{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    border-left: solid 2px #fff; border-right: solid 2px #fff;
 }
-ul li a:hover{
-    text-decoration: underline;
+
+.maincategori .categori>li a:hover{
+    background: #3fa2ff;
+    color: #fff;
+}
+
+/* 서브 카테고리 부분 */
+.maincategori .subcategori{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.maincategori .sub{
+    float: left;
+    width: 25%;
+    right: 40px;
+}
+
+.maincategori .sub li{
+    background: #8CC8FF;
+    width: 200px;
+    border-top: solid 1px #fff; border-bottom: solid 1px #fff;
+}
+
+.maincategori .sub li a:hover .goods1{
+    background: #3fa2ff;
+    display: block;
+}
+
+.goods1{
+    position: relative;
+    display: none;
+    background: #d2e9ff;
 }

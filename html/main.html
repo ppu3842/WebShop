@@ -4,37 +4,122 @@
     <head>
         <meta charset="UTF-8">
         <title>web shop</title>
+        <!-- main.css랑 연결 -->
         <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
-        <div id="main">
+        <!-- 메인 홈페이지 -->
+        <div id="main"> 
+            <!-- 상단에 있는 로고, 검색창, 메뉴 -->
             <header>
+                <!-- 로고 이미지 -->
                 <div id="logo">
                     <img src="../Images/logo.png" alt="logo" width="200px" height="120px">
                 </div>
+                <!-- 검색창 -->
                 <div class="search">
+                    <!-- 검색어 입력 부분 -->
                     <input type="text" placeholder="검색어 입력" id="search1">
+                    <!-- 돋보기 아이콘 -->
                     <img src="../Images/search.png" alt="search" id="reading_glasses">
                 </div>
+                <!-- 헤더 영역에 있는 메뉴 -->
                 <div class="topmenu">
+                    <!-- 로그인 아이콘 -->
                     <img src="../Images/profile.png" alt="로그인" id="profile" width="50px" height="50px">
+                    <!-- 장바구니 아이콘 -->
                     <img src="../Images/cart.png" alt="장바구니" id="cart" width="50px" height="50px">
+                    <!-- 최근 본 상품 아이콘 -->
                     <img src="../Images/like.png" alt="최근 본 상품" id="like" width="50px" height="50px">
                 </div>
             </header>
-            <ul class="maincategori">
-                <li><a href="">| clothes |</a></li>
-                <li><a href="">| food |</a></li>
-                <li><a href="">| furniture |</a></li>
-                <li><a href="">| Electronics |</a></li>
-                <li><a href="">| sports |</a></li>
-            </ul>
-            <ul class="subcategori">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <br><br><br>
+            <!-- 메인 카테고리 영역 -->
+            <div class="maincategori">
+                <ul class="categori">
+                    <!-- 메인 카테고리 1 -->
+                    <li>
+                        <a href="" id="mcname">costume</a>
+                        <!-- 서브 카테고리 1 -->
+                        <div class="subcategori">
+                            <ul class="sub">
+                                <li><a href="#" id="sub_costume1">여성 의류</a>
+                                    <div class="goods1">
+                                        <img src="../Images/여성의류 사진 1.png" alt="여성의류1">
+                                        <img src="../Images/여성의류 사진 2.png" alt="여성의류2">
+                                        <img src="../Images/여성의류 사진 3.png" alt="여성의류3">
+                                        <br>
+                                        <p>빅사이즈 박시 면 롱원피스 오버핏 루즈핏</p>
+                                        <p>쿨젠니트조끼가디건티셔츠반바지원피스남방</p>
+                                        <p>가을신상슬랙스 와이드 핀턱 하이웨스트</p>
+                                        <br>
+                                        <p>37,900원</p>
+                                        <p>32,800원</p>
+                                        <p>22,900원</p>
+                                    </div>
+                                </li>
+                                <li><a href="#" id="sub_costume2">남성 의류</a></li>
+                                <li><a href="#" id="sub_costume3">아동 의류</a></li>
+                                <li><a href="#" id="sub_costume4">언더웨어</a></li>
+                                <li><a href="#" id="sub_costume5">잡화</a></li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <!-- 메인 카테고리 2 -->
+                    <li>
+                        <a href="" id="mcname">food</a>
+                        <!-- 서브 카테고리 2 -->
+                        <div class="subcategori">
+                            <ul class="sub">
+                                <li><a href="#">신선 식품</a></li>
+                                <li><a href="#">가공 식품</a></li>
+                                <li><a href="#">건강 식품</a></li>
+                                <li><a href="#">음료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 메인 카테고리 3 -->
+                    <li>
+                        <a href="" id="mcname">furniture</a>
+                        <!-- 서브 카테고리 3 -->
+                        <div class="subcategori">
+                            <ul class="sub">
+                                <li><a href="#">침구/커튼</a></li>
+                                <li><a href="#">조명/인테리어</a></li>
+                                <li><a href="#">생활 용품</a></li>
+                                <li><a href="#">주방 용품</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 메인 카테고리 4 -->
+                    <li>
+                        <a href="" id="mcname">digital</a>
+                        <!-- 서브 카테고리 4 -->
+                        <div class="subcategori">
+                            <ul class="sub">
+                                <li><a href="#">컴퓨터</a></li>
+                                <li><a href="#">모바일/태블릿</a></li>
+                                <li><a href="#">영상 가전</a></li>
+                                <li><a href="#">주방 가전</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 메인 카테고리 5 -->
+                    <li>
+                        <a href="" id="mcname">Sports/Health</a>
+                        <!-- 서브 카테고리 5 -->
+                        <div class="subcategori">
+                            <ul class="sub">
+                                <li><a href="#">스포츠 의류</a></li>
+                                <li><a href="#">스포츠 도구</a></li>
+                                <li><a href="#">캠핑/등산</a></li>
+                                <li><a href="#">건강/의료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
