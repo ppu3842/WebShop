@@ -6,16 +6,20 @@
         <title>web shop</title>
         <!-- main.css랑 연결 -->
         <link rel="stylesheet" href="../css/main.css">
+        <!-- Jquery Libary 적용 - jquery.com -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="../js/main.js"></script>
     </head>
     <body>
-        <script src="../js/main.js"></script>
         <!-- 메인 홈페이지 -->
         <div id="main"> 
             <!-- 상단에 있는 로고, 검색창, 메뉴 -->
             <header>
                 <!-- 로고 이미지 -->
                 <div id="logo">
+                    <a href="http://hannsolbi.dothome.co.kr/webshop/html/main.html">
                     <img src="../Images/logo.png" alt="logo" width="200px" height="120px">
+                    </a>
                 </div>
                 <!-- 검색창 -->
                 <div class="search">
@@ -27,7 +31,9 @@
                 <!-- 헤더 영역에 있는 메뉴 -->
                 <div class="topmenu">
                     <!-- 로그인 아이콘 -->
+                    <a href="">
                     <img src="../Images/profile.png" alt="로그인" id="profile" width="50px" height="50px">
+                    </a>
                     <!-- 장바구니 아이콘 -->
                     <img src="../Images/cart.png" alt="장바구니" id="cart" width="50px" height="50px">
                     <!-- 최근 본 상품 아이콘 -->
@@ -44,13 +50,17 @@
                         <!-- 서브 카테고리 1 -->
                         <div class="subcategori">
                             <ul class="sub">
-                                <li><a href="#" id="sub_costume1">여성 의류</a></li>
-                                <li><a href="#" id="sub_costume2">남성 의류</a></li>
-                                <li><a href="#" id="sub_costume3">아동 의류</a></li>
-                                <li><a href="#" id="sub_costume4">언더웨어</a></li>
-                                <li><a href="#" id="sub_costume5">잡화</a></li>
+                                <input type="button" value="여성 의류" onclick="on_sub_costume1()">
+                                <input type="button" value="남성 의류">
+                                <input type="button" value="아동 의류">
+                                <input type="button" value="언더웨어">
+                                <input type="button" value="잡화">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
                             </ul>
-                            
                         </div>
                     </li>
                     <!-- 메인 카테고리 2 -->
@@ -59,10 +69,16 @@
                         <!-- 서브 카테고리 2 -->
                         <div class="subcategori">
                             <ul class="sub">
-                                <li><a href="#">신선 식품</a></li>
-                                <li><a href="#">가공 식품</a></li>
-                                <li><a href="#">건강 식품</a></li>
-                                <li><a href="#">음료</a></li>
+                                <input type="button" value="신선 식품" onclick="on_sub_food1()">
+                                <input type="button" value="가공 식품">
+                                <input type="button" value="건강 식품">
+                                <input type="button" value="음료">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
                             </ul>
                         </div>
                     </li>
@@ -72,10 +88,16 @@
                         <!-- 서브 카테고리 3 -->
                         <div class="subcategori">
                             <ul class="sub">
-                                <li><a href="#">침구/커튼</a></li>
-                                <li><a href="#">조명/인테리어</a></li>
-                                <li><a href="#">생활 용품</a></li>
-                                <li><a href="#">주방 용품</a></li>
+                                <input type="button" value="침구/커튼" onclick="on_sub_furniture1()">
+                                <input type="button" value="조명/인테리어">
+                                <input type="button" value="생활 용품">
+                                <input type="button" value="주방 용품">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
                             </ul>
                         </div>
                     </li>
@@ -85,10 +107,16 @@
                         <!-- 서브 카테고리 4 -->
                         <div class="subcategori">
                             <ul class="sub">
-                                <li><a href="#">컴퓨터</a></li>
-                                <li><a href="#">모바일/태블릿</a></li>
-                                <li><a href="#">영상 가전</a></li>
-                                <li><a href="#">주방 가전</a></li>
+                                <input type="button" value="컴퓨터" onclick="on_sub_digital1()">
+                                <input type="button" value="모바일/태블릿">
+                                <input type="button" value="영상 가전">
+                                <input type="button" value="주방 가전">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
                             </ul>
                         </div>
                     </li>
@@ -98,28 +126,57 @@
                         <!-- 서브 카테고리 5 -->
                         <div class="subcategori">
                             <ul class="sub">
-                                <li><a href="#">스포츠 의류</a></li>
-                                <li><a href="#">스포츠 도구</a></li>
-                                <li><a href="#">캠핑/등산</a></li>
-                                <li><a href="#">건강/의료</a></li>
+                                <input type="button" value="스포츠 의류"onclick="on_sub_Sports1()">
+                                <input type="button" value="스포트 도구">
+                                <input type="button" value="캠핑/등산">
+                                <input type="button" value="건강/의료">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
+                                <input type="button" value="">
                             </ul>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="goods1">
+            <!-- 코스튬 상품 페이지 -->
+            <div class="costumegoods1" id="goods">
                 <img src="../Images/여성의류 사진 1.png" alt="여성의류1">
                 <img src="../Images/여성의류 사진 2.png" alt="여성의류2">
                 <img src="../Images/여성의류 사진 3.png" alt="여성의류3">
                 <br>
-                <p>빅사이즈 박시 면 롱원피스 오버핏 루즈핏</p>
-                <p>쿨젠니트조끼가디건티셔츠반바지원피스남방</p>
-                <p>가을신상슬랙스 와이드 핀턱 하이웨스트</p>
+                <p id="description">빅사이즈박시면롱원피스오버핏루즈핏</p>
+                <p id="description">쿨젠니트조끼가디건티셔츠반바지원피스남방</p>
+                <p id="description">가을신상슬랙스와이드핀턱하이웨스트</p>
                 <br>
-                <p>37,900원</p>
-                <p>32,800원</p>
-                <p>22,900원</p>
+                <p id="price">37,900원</p>
+                <p id="price">32,800원</p>
+                <p id="price">22,900원</p>
             </div>
+            <!-- 푸드 상품 페이지 -->
+            <div class="foodgoods1" id="goods">
+                <img src="../Images/신선식품 사진 1.png" alt="신선식품1">
+                <img src="../Images/신선식품 사진 2.png" alt="신선식품2">
+                <img src="../Images/신선식품 사진 3.png" alt="신선식품3">
+                <br>
+                <p id="description">국산열무김치4kg/김치얼갈이들어간열무김치하루만특별할인</p>
+                <p id="description">가정용실속샤인머스켓2.2kg(5송이)</p>
+                <p id="description">청도반건시곶감선물세트20입(100g/특과)/선물용가방</p>
+                <br>
+                <p id="price">28,900원</p>
+                <p id="price">22,400원</p>
+                <p id="price">29,900원</p>
+            </div>
+            <footer>
+                <div class="mainfooter">
+                    <span>(주) Web Shop</span> <span>  |  </span>
+                    <span>대표 : 밀푀유</span> <span>  |  </span>
+                    <span>사업자 등록 번호 : 000-00-00000</span> <span>  |  </span>
+                    <p>주소 : 달달한시 디저트동 밀푀유호</p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
