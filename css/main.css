@@ -34,6 +34,7 @@
     position: relative;
     top: 36px;
     left: 50px;
+    text-decoration-line: none;
 }
 #cart{
     position: relative;
@@ -44,6 +45,9 @@
     position: relative;
     top: 36px;
     left: 50px;
+}
+.topmenu a{
+    text-decoration: none;
 }
 
 /* 메인 카테고리 영역 */

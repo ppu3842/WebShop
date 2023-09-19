@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>join</title>
+    
+        <link rel="stylesheet" href="../css/join.css">
+    </head>
+    <body>
+        <div class="join">
+            <a href="http://hannsolbi.dothome.co.kr/webshop/html/main.html">
+            <img id="logo" src="../Images/logo.png" alt="logo" width="400px" height="240px">
+            </a>
+            <div class="menu">
+                <input type="text" placeholder="아이디" id="id">
+                <button>중복확인</button>
+            </div>
+            <div class="menu">
+                <input type="text" placeholder="비밀번호" id="password">
+            </div>
+            <div class="menu">
+                <input type="text" placeholder="비밀번호 재확인" id="passwordre">
+            </div>
+            <div class="menu">
+                <input type="text" placeholder="이름" id="name">
+            </div>
+            <div class="birth">
+                <div>
+                    <input type="number" placeholder="년(4자)" id="year">                
+                    <select id="month">
+                        <option value="">월</option>
+                        <option value="">1월</option>
+                        <option value="">2월</option>
+                        <option value="">3월</option>
+                        <option value="">4월</option>
+                        <option value="">5월</option>
+                        <option value="">6월</option>
+                        <option value="">7월</option>
+                        <option value="">8월</option>
+                        <option value="">9월</option>
+                        <option value="">10월</option>
+                        <option value="">11월</option>
+                        <option value="">12월</option>
+                    </select>
+                    <input type="number" placeholder="일" id="day">
+                </div>
+            </div>
+            <div class="gender">
+                <b>성별</b>
+                <div id="gender">
+                    <label><input type="radio" name="gender">남자</label>
+                    <label><input type="radio" name="gender">여자</label>
+                </div>
+            </div>
+            <div class="menu">
+                <b>이메일<small>(선택)</small></b>
+                <input type="email" placeholder="선택입력">
+            </div>
+            
+            <div class="tel">
+                <b>휴대전화</b>
+                <select id="telnumber">
+                    <option value="">대한민국 +82</option>
+                </select>
+                <div>
+                    <input type="tel" placeholder="전화번호 입력" id="tel">
+                </div>
+            </div>
+            <input type="submit" value="가입하기" id="submit">
+            <input type="reset" value="초기화" id="reset">
+        </div>
+    </body>
+</html>

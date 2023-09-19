@@ -1,0 +1,73 @@
+#logo{
+    position: relative;
+    text-align: center;
+    left: 20px;
+}
+
+.idpw{
+    position: relative;
+    top: 42px;
+    text-align: center;
+}
+
+#id{
+    border: 3px solid #8CC8FF;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 400px; height: 30px;
+}
+
+#password{
+    position: relative;
+    border: 3px solid #8CC8FF;
+    border-radius: 8px;
+    font-size: 14px;
+    top: 20px;
+    width: 400px; height: 30px;
+}
+
+#login{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background-color: #8CC8FF;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    border-width: 0px;
+    margin: auto;
+    top: 100px;
+    cursor: pointer;
+}
+
+button{
+    position: relative;
+    background-color: #8CC8FF;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    border-width: 0px;
+    padding-top: 10px;
+}
+
+.bottommenu{
+    position: relative;
+    text-align: center;
+    top: 120px;
+}
+
+#join{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 2px black;
+    right: 10px;
+}
+
+#search{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 2px black;
+    left: 10px;
+}
